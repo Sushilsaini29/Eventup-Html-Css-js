@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Services</title>
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+  </header>
+  <div class="container">
+    <div class="service">
+      <img src="room-1.png" alt="Service 1">
+      <h2>Event Planning</h2>
+      <p>We offer comprehensive event planning services, from conceptualization to execution. Our team handles all the details, ensuring a seamless and unforgettable event experience.</p>
+    </div>
+    <div class="service">
+      <img src="service2.jpg" alt="Service 2">
+      <h2>Venue Selection</h2>
+      <p>With our extensive network of venues, we help you find the perfect location for your event. From elegant ballrooms to outdoor settings, we ensure your venue aligns with your vision.</p>
+    </div>
+    <div class="service">
+      <img src="service3.jpg" alt="Service 3">
+      <h2>Event Design</h2>
+      <p>Our creative team brings your event vision to life through stunning design elements. From stage setups to lighting and decor, we create an ambiance that captivates your guests.</p>
+    </div>
+    <div class="service">
+      <img src="service4.jpg" alt="Service 4">
+      <h2>Logistics Management</h2>
+      <p>We handle all the logistics, including vendor coordination, transportation, equipment setup, and on-site management. You can focus on enjoying the event while we take care of the rest.</p>
+    </div>
+    <div class="service">
+      <img src="service5.jpg" alt="Service 5">
+      <h2>Entertainment Planning</h2>
+      <p>We offer a wide range of entertainment options to make your event memorable. From live bands and DJs to performers and artists, we help you choose the perfect entertainment for your audience.</p>
+    </div>
+    <div class="service">
+      <img src="service6.jpg" alt="Service 6">
+      <h2>Marketing and Promotion</h2>
+      <p>Our marketing team helps you create a buzz around your event. We develop targeted marketing strategies, manage social media campaigns, and create compelling content to attract attendees.</p>
+    </div>
+  </div>
+
+  <script>
+    const services = document.querySelectorAll('.service');
+
+    services.forEach(service => {
+      service.addEventListener('click', () => {
+        service.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Event</title>
+<style>
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.bg-img {
+  background-image: url(https://unsplash.it/1920x1080/?random);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0db92d;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #09b743;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio {
+  margin-right: 10px;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+</style>
+</head>
+<body>
+<div class="bg-img">
+  <div class="container">
+    <h1>Create Event</h1>
+    <input type="text" placeholder="Event Title" name="event_title" required>
+    <input type="text" placeholder="Event Type" name="event_Type" required>
+    <input type="date" placeholder="Event Date" name="event_date" required>
+    <input type="time" placeholder="Event Time" name="event_time" required>
+    <input type="text" placeholder="Event Location" name="event_location" required>
+    <textarea placeholder="Event Description" name="event_description" rows="5" cols="50"></textarea>
+    <input type="email" placeholder="Event Organizer Email" name="event_organizer_email" required>
+    <input type="number" placeholder="Event Capacity" name="event_capacity" required>
+    <div class="radio-group">
+      <input type="radio" name="event_type" value="online" checked> Online
+      <input type="radio" name="event_type" value="in-person"> In-person
+    </div>
+    <button type="submit" class="btn">Create Event</button>
+  </div>
+</div>
+</body>
+</html>
